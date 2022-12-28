@@ -17,7 +17,7 @@ const repoName = process.argv[2];
 
 console.log(`Cloning the repository with name ${repoName}`);
 
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/3amr7ussein/expresss-pg-ts-jasmine-prettier-eslint-template ${repoName}`;
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/3amr7ussein/express-pg-template ${repoName}`;
 //clone the template repo into folder with new name repoName
 const checkOut = runCommand(gitCheckoutCommand);
 if (!checkOut) process.exit(-1);

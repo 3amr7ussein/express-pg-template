@@ -1,17 +1,18 @@
 {
   "name": "express-postgres-typescript-template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "this is an express project template 'ready configured with Typescript, postgres, jasmine, prettier and eslint'",
   "main": "index.js",
   "bin": "./bin/cli.cjs",
   "scripts": {
-    "migrate": "db-migrate up",
-    "test": "npx tsc &&set ENV=test&& db-migrate --env test up && jasmine&& npm run test-reset",
+    "prod-reset": "db-migrate --env prod reset",
+    "dev-reset": "db-migrate --env dev reset",
     "test-reset": "db-migrate --env test down",
-    "lint": "eslint ./src --ext .ts",
-    "lint:fix": "eslint ./src --ext .ts --fix",
+    "test": "npx tsc &&set ENV=test&& db-migrate --env test up && jasmine&& npm run test-reset",
     "start": "npx tsc && db-migrate --env dev up && nodemon ./src/index.ts",
-    "start:prod": "npx tsc && set ENV=prod&& db-migrate --env prod up && node dist/src/index.js"
+    "start:prod": "npx tsc && set ENV=prod&& db-migrate --env prod up && node dist/src/index.js",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --ext .ts --fix"
   },
   "keywords": [],
   "author": "",

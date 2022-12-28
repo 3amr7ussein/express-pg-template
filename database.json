@@ -22,5 +22,6 @@
     "user": { "ENV": "POSTGRES_USER" },
     "password": { "ENV": "POSTGRES_PASSWORD" },
     "port": { "ENV": "DB_PORT" }
-  }
+  },
+  "sql-file": true
 }
