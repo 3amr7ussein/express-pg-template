@@ -1,8 +1,8 @@
-## This is a started Express-Postgres-Typescript-Jasmin project
+## This is a started Express-Postgres-Typescript-Jasmine project
 
 ### Installation
 
-1- run npx express-postgres-typescript-template <project_name>
+1- run npx template-express-pg-ts <project_name>
 
 2- cd <project_name>
 

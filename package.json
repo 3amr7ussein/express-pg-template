@@ -1,6 +1,6 @@
 {
-  "name": "express-postgres-typescript-template",
-  "version": "1.0.2",
+  "name": "template-express-pg-ts",
+  "version": "1.0.0",
   "description": "this is an express project template 'ready configured with Typescript, postgres, jasmine, prettier and eslint'",
   "main": "index.js",
   "bin": "./bin/cli.cjs",
